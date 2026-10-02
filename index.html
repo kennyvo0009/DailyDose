@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DailyDose</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>DailyDose</h1>
+    <p>Forgot about a test? Paste your notes and cram the important stuff.</p>
+
+    <h3>1. Your notes</h3>
+    <textarea id="notes" rows="12" placeholder="Paste your notes here..."></textarea>
+    <div>or upload a .txt file: <input type="file" id="file" accept=".txt,.md" /></div>
+
+    <h3>2. Pick one</h3>
+    <button id="cram">Cram Summary</button>
+    <button id="idea">Key Idea</button>
+    <button id="quiz">Quick Quiz</button>
+
+    <div id="output"></div>
+
+    <script src="study.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
