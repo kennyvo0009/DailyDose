@@ -1,5 +1,89 @@
-body { font-family: Arial, sans-serif; max-width: 800px; margin: 20px auto; padding: 0 16px; background: white; color: black; }
-textarea { width: 100%; }
-button { margin-right: 8px; padding: 6px 12px; }
-label { display: block; }
-#output { margin-top: 15px; }
+/* Page background and layout */
+body {
+  font-family: Arial, sans-serif;
+  max-width: 650px;
+  margin: 40px auto;
+  padding: 24px;
+  background-color: #f4f6f8;
+  color: #333333;
+  line-height: 1.5;
+}
+
+/* Headings and subtext */
+h1 {
+  color: #1a252f;
+  margin-bottom: 6px;
+}
+
+p {
+  color: #555555;
+  margin-top: 0;
+}
+
+h3 {
+  color: #2c3e50;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+/* Notes text box */
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+textarea:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* File upload area */
+div {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #666666;
+}
+
+/* Action buttons */
+button {
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  padding: 10px 16px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Quiz multiple choice options */
+label {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Output box for summary, key idea, or quiz */
+#output {
+  margin-top: 24px;
+  padding: 16px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  white-space: pre-wrap;
+}
+
+#output:empty {
+  display: none;
+}
